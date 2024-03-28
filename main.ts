@@ -1,6 +1,5 @@
 #! /usr/bin/env node
 
-
 import inquirer from "inquirer";
 let pinCode = 12345;
 let yourBalance = 10000;
@@ -38,7 +37,6 @@ if (answer.pin === pinCode) {
     } else {
       console.log("insufficient balance ");
     }
-    // console.log(`your remaning balance is:${yourBalance}`);
   } else if (operationAns.operations === "checkbalance") {
     console.log(`your balance is : ${yourBalance}`);
   } else if (operationAns.operations === "fastcash") {
